@@ -1,0 +1,47 @@
+{
+    "authordetail": {
+        "name": "Vivek Kumar",
+        "shortIntroduction": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
+        "profilePicture": "../../assets/dummy-profile-pic.jpg",
+        "contactDetails": [
+            {
+                "type": "phone",
+                "value": "+91-7854-894496"
+            },
+            {
+                "type": "email",
+                "value": "vivekkr8235@gmail.com"
+            },
+            {
+                "type": "linkedin",
+                "value": "vivekkr8235@gmail.com"
+            },
+            {
+                "type": "twitter",
+                "value": "vivekkr8235@gmail.com"
+            },
+            {
+                "type": "instagram",
+                "value": "vivekkr8235@gmail.com"
+            }
+        ]
+    },
+    "actionlinks": [
+        {
+            "action": "Resume",
+            "link": "#"
+        },
+        {
+            "action": "Portfolio",
+            "link": "#"
+        },
+        {
+            "action": "Contacts",
+            "link": "#"
+        },
+        {
+            "action": "Feedbacks",
+            "link": "#"
+        }
+    ]
+}

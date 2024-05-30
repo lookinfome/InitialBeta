@@ -1,0 +1,86 @@
+/* Profile picture related styles */
+
+.profile-pic{
+    height: 300px;
+    width: 300px;
+}
+
+.profile-pic img{
+    height: 100%;
+    width: max-content;
+    border-radius: 50%;
+}
+
+/* Visiting card related styles */
+
+.visting-card{
+    width:min-content;
+    /* background-color: red; */
+}
+
+.visting-card-content{
+    /* background-color: yellow; */
+}
+
+.visting-card-content .short-introduction h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.visting-card-content .short-introduction h5{
+    font-size: 15px;
+}
+
+.visting-card-content .short-introduction h3{
+    font-size: 20px;
+}
+
+.visting-card-content .short-introduction p{
+    width: 100%;
+    font-size: 12px;
+}
+
+.action-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center; /* Ensures text alignment is centered */
+}
+
+/* Footer related styles */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Align content horizontally at center */
+    color: #000000 !important;
+    background-color: #F1F1F1;
+}
+
+.footer-content i{
+    color: #000000;
+}
+
+.footer-content-contact-links a{
+    margin-left: 15px;
+}
+
+.action-links a{
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #FFBF78;
+    transition: 0.5s ease-in-out;
+}
+
+.action-links a:hover{
+    background-color: #FF7D29;
+}
