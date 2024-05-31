@@ -1,0 +1,21 @@
+/* Footer related styles */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Align content horizontally at center */
+    color: #000000 !important;
+    background-color: #F1F1F1;
+}
+
+.footer-content i {
+    color: #000000;
+}
+
+.footer-content-contact-links a {
+    color: #000;
+    margin-left: 15px;
+}

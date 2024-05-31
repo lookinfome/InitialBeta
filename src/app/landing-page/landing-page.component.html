@@ -1,13 +1,6 @@
-<div class="parent-div">
+<!-- main body -->
 
-    <!-- navbar -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container container-fluid">
-            <a class="navbar-brand">Vivek Kumar</a>
-        </div>
-    </nav>
-
-    <!-- main body -->
+<div class="landing-page-parent-div">
 
     <!-- Visiting card -->
     <div class="visting-card d-flex mx-auto mt-5">
@@ -23,7 +16,7 @@
             <!-- Short introduction -->
             <div class="short-introduction p-2">
                 <h1>{{name}}</h1>
-                <h5>Senior Analyst | Capgemini</h5>
+                <h5>{{designation}} | {{currentCompany}}</h5>
 
                 <h3 class="">A bit about me</h3>
                 <p>
@@ -32,31 +25,11 @@
 
                 <!-- Action links -->
                 <div class="action-links d-flex justify-content-between">
-                    <a *ngFor="let actionlinks of actionlinks" [href]="actionlinks.link">
-                        {{actionlinks.action}}
+                    <a *ngFor="let link of actionlinks" [routerLink]="[link.link]">
+                        {{link.action}}
                     </a>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <!-- footer -->
-    <div class="footer">
-        <div class="container footer-content d-flex justify-content-between mt-3 mb-0">
-
-            <!-- Copyright content -->
-            <p>Copyright <i class="fas fa-copyright"></i> {{currentYear}} {{name}}</p>
-    
-            <!-- Contact links -->
-            <div class="footer-content-contact-links">
-                <a href="https://www.linkedin.com/in/lookingforme/"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            
-
-
         </div>
     </div>
 

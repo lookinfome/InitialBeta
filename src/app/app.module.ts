@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 
+
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +15,12 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
     ResumePageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', redirectTo: '/landing-page', pathMatch: 'full' },
+      { path: 'landing-page', component: LandingPageComponent },
+      { path: 'resume-page', component: ResumePageComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

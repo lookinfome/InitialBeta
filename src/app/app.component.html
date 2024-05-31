@@ -1,1 +1,36 @@
-<app-landing-page></app-landing-page>
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container container-fluid">
+        <a class="navbar-brand" [routerLink]="[navHome]">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- Main content -->
+<router-outlet></router-outlet>
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container footer-content d-flex justify-content-between mt-3 mb-0">
+
+        <!-- Copyright content -->
+        <p>Copyright <i class="fas fa-copyright"></i> {{currentYear}} {{name}}</p>
+
+        <!-- Contact links -->
+
+        <div class="footer-content-contact-links">
+            <span *ngFor="let contact of contactDetails">
+                <a [href]="contact.value" target="_blank" rel="noopener noreferrer">
+                    <span [innerHTML]="contact.icon"></span>
+                </a>
+            </span>
+        </div>
+
+
+
+
+
+    </div>
+</div>

@@ -1,1 +1,115 @@
-<p>resume-page works!</p>
+<!-- main body -->
+
+<div class="container resume-page-parent-div">
+
+    <div class="d-flex">
+        <!-- introduction -->
+        <div class="card introduction mt-3">
+            <img style="height: 300px !important;" class="introduction-img" src="../../assets/dummy-profile-pic-1.jpg"
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Vivek Kumar</h5>
+
+                <!-- about me -->
+                <p class="card-text">
+                    Always a student, motivated to learn new things around work, taking new challenges
+                    while being optimistic but not overconfident.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- experiences -->
+        <div class="experiences mt-3 mx-2">
+
+        </div>
+    </div>
+
+    <!-- skillsets -->
+    <div class="skillsets mt-3">
+        <h5 class="mx-2 mt-2">
+            <i class="fas fa-user-cog"></i>
+            Skills
+        </h5>
+        <div class="skillsets-items d-flex mb-2">
+            <div *ngFor="let skillset of skillsets">
+                <div class="skillsets-skill mx-1 p-1">
+                    <p>{{ skillset.category }}</p>
+                    <span *ngFor="let skill of skillset.skills" class="mx-1 badge bg-success text-dark">
+                        {{ skill.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- interests and langugaes -->
+    <div class="d-flex">
+        <!-- interests -->
+        <div class="interests mt-3">
+            <h5 class="mx-2 mt-2">
+                <i class="far fa-compass"></i>
+                Interests
+            </h5>
+            <div class="interests-items d-flex mb-2">
+                <div *ngFor="let interest of interests" class="mx-1">
+                    <span class="badge bg-warning text-dark">
+                        <span [innerHTML]="interest.icon"></span>
+                        {{interest.interest}}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- langugaes -->
+        <div class="languages mt-3 mx-3">
+            <h5 class="mx-2 mt-2">
+                <i class="fas fa-language"></i>
+                Langugaes
+            </h5>
+            <div class="languages-items d-flex mb-2">
+                <div *ngFor="let language of languages" class="mx-1">
+                    <span class="badge bg-info text-dark">
+                        {{language.name}}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- contacts -->
+        <div class="contacts mt-3">
+            <h5 class="mx-2 mt-2">
+                <i class="fas fa-mobile-alt"></i>
+                Contacts
+            </h5>
+            <div class="contacts-items d-flex mb-2">
+                <div *ngFor="let contact of contactDetails" class="mx-1 d-flex justify-content-center">
+                    <span class="mx-2" [innerHTML]="contact.icon"></span>
+                    <span class="badge bg-warning text-dark">{{contact.value}}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- achivements -->
+
+
+    <!-- acknowledgment -->
+    <div class="acknowledgment mt-3">
+        <h5 class="p-2">
+            <i class="fas fa-paperclip"></i>
+            Acknowledgment
+        </h5>
+        <p class="acknowledgment-clause p-1">
+            I hereby declare that all the information provided above is correct to the best of my knowledge.
+        </p>
+        <p class="acknowledgment-signature p-2 d-flex justify-content-end">
+            {{name}}
+        </p>
+    </div>
+
+</div>

@@ -1,47 +1,158 @@
 {
-    "authordetail": {
+    "basicdetail": {
         "name": "Vivek Kumar",
+        "designation": "Senior Analyst",
+        "currentCompany": "Capgemini",
         "shortIntroduction": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
         "profilePicture": "../../assets/dummy-profile-pic.jpg",
         "contactDetails": [
             {
-                "type": "phone",
-                "value": "+91-7854-894496"
+                "type": "location",
+                "value": "Kolkata, West Bengal, India",
+                "icon": "<i class=\"fas fa-map-pin\"></i>"
             },
             {
                 "type": "email",
-                "value": "vivekkr8235@gmail.com"
+                "value": "vivekkr8235@gmail.com",
+                "icon": "<i class=\"fas fa-envelope-square\"></i>"
+            },
+            {
+                "type": "phone",
+                "value": "+91-7854-894496",
+                "icon": "<i class=\"fas fa-phone-square\"></i>"
             },
             {
                 "type": "linkedin",
-                "value": "vivekkr8235@gmail.com"
+                "value": "https://www.linkedin.com/in/lookingforme/",
+                "icon": "<i class=\"fab fa-linkedin\"></i>"
             },
             {
                 "type": "twitter",
-                "value": "vivekkr8235@gmail.com"
+                "value": "vivekkr8235@gmail.com",
+                "icon": "<i class=\"fab fa-twitter-square\"></i>"
             },
             {
                 "type": "instagram",
-                "value": "vivekkr8235@gmail.com"
+                "value": "vivekkr8235@gmail.com",
+                "icon": "<i class=\"fab fa-instagram\"></i>"
+            }
+        ],
+        "languages": [
+            {
+                "name": "Hindi",
+                "icon": ""
+            },
+            {
+                "name": "English",
+                "icon": ""
+            }
+        ],
+        "interests": [
+            {
+                "interest": "Chess",
+                "icon": "<i class=\"fas fa-chess\"></i>"
+            },
+            {
+                "interest": "Video Games",
+                "icon": "<i class=\"fas fa-gamepad\"></i>"
+            },
+            {
+                "interest": "Geo-Politics",
+                "icon": "<i class=\"fas fa-globe-americas\"></i>"
             }
         ]
     },
+    "resumedetails": {
+        "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
+        "experiences":[
+            {
+                "company": "",
+                "workdetail": "",
+                "starttime": "",
+                "endtime": "",
+                "location": "",
+                "responsibilities": []
+            }
+        ],
+        "skillset": [
+            {
+                "category": "Technical",
+                "skills": [
+                    {"name": "MVC .NET Framework", "icon": ""},
+                    {"name": "C#/CSharp", "icon": ""},
+                    {"name": "TypeScript", "icon": ""},
+                    {"name": "JavaScript", "icon": ""},
+                    {"name": "Angular", "icon": ""},
+                    {"name": "MySQL", "icon": ""},
+                    {"name": "HTML5", "icon": ""},
+                    {"name": "CSS", "icon": ""},
+                    {"name": "Bootstrap", "icon": ""}
+                ]
+            },
+            {
+                "category": "Analytical",
+                "skills": [
+                    {"name": "R&D", "icon": ""},
+                    {"name": "Application Audit & Analysis", "icon": ""},
+                    {"name": "Analytical Dashboards", "icon": ""}
+                ]
+            },
+            {
+                "category": "Support",
+                "skills": [
+                    {"name": "Support Lead", "icon": ""},
+                    {"name": "Ticket Management (Incident, Service Requests)", "icon": ""},
+                    {"name": "Change Request Delivery", "icon": ""},
+                    {"name": "DR Drill Management", "icon": ""},
+                    {"name": "Vulnerability Mitigation", "icon": ""},
+                    {"name": "Server Maintenance", "icon": ""},
+                    {"name": "Documentation", "icon": ""}
+                ]
+            },
+            {
+                "category": "QA",
+                "skills": [
+                    {"name": "Test Plan Creation", "icon": ""},
+                    {"name": "Test Case Execution & Debugging", "icon": ""},
+                    {"name": "Root Cause Analysis", "icon": ""}
+                ]
+            },
+            {
+                "category": "Tools & Applications",
+                "skills": [
+                    {"name": "Sinequa Enterprise Search", "icon": ""},
+                    {"name": "Postman", "icon": ""},
+                    {"name": "Notepad++", "icon": ""},
+                    {"name": "Figma", "icon": ""},
+                    {"name": "Canva", "icon": ""},
+                    {"name": "PowerBI", "icon": ""}
+                    
+                ]
+            }
+        ],
+        
+        "acheivements":[]
+    },
     "actionlinks": [
         {
+            "action": "Home",
+            "link": "/landing-page"
+        },
+        {
             "action": "Resume",
-            "link": "#"
+            "link": "/resume-page"
         },
         {
             "action": "Portfolio",
-            "link": "#"
+            "link": "/portfolio-page"
         },
         {
             "action": "Contacts",
-            "link": "#"
+            "link": "/contact-page"
         },
         {
             "action": "Feedbacks",
-            "link": "#"
+            "link": "/feedback-page"
         }
     ]
 }

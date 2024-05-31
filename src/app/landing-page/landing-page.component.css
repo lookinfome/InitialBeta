@@ -40,7 +40,9 @@
     font-size: 12px;
 }
 
-.action-links a {
+/* Action links related style */
+.action-links a{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,29 +53,7 @@
     border-radius: 50%;
     border: 1px solid black;
     text-align: center; /* Ensures text alignment is centered */
-}
 
-/* Footer related styles */
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Align content horizontally at center */
-    color: #000000 !important;
-    background-color: #F1F1F1;
-}
-
-.footer-content i{
-    color: #000000;
-}
-
-.footer-content-contact-links a{
-    margin-left: 15px;
-}
-
-.action-links a{
     color: #000000;
     font-weight: 600;
     text-decoration: none;

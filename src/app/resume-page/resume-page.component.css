@@ -1,0 +1,59 @@
+.introduction{
+    width: 25%;
+}
+
+.introduction-img{
+    width: 100%;
+}
+
+
+.experiences{
+    width: 75%;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.interests{
+    width: fit-content;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.acknowledgment{
+    width: fit-content;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.languages{
+    width: fit-content;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.skillsets{
+    width: fit-content;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.skillsets-skill{
+    border-radius: 5px;
+    background-color: darkseagreen;
+}
+
+.skillsets-skill span{
+    cursor: pointer;
+}
+
+.contacts{
+    width: fit-content;
+    background-color: snow;
+    border: 1px dashed black;
+    border-radius: 5px;
+}

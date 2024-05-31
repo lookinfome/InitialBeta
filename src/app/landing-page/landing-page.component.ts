@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import contentData from '../../assets/content.json';
 
+import { Router } from '@angular/router';
+
 interface ActionLinks {
   action: string,
   link: string
 }
-
-let cacheIndex: number = 0;
 
 @Component({
   selector: 'app-landing-page',
@@ -15,24 +15,40 @@ let cacheIndex: number = 0;
 })
 export class LandingPageComponent implements OnInit {
 
+  /**
+   * Author details
+   */
   name: string = "";
   introduction: string = "";
   image: string = "";
   actionlinks: ActionLinks[] = [];
+  currentCompany: string = "";
+  designation: string = "";
   currentYear: number = 2024;
 
+  /**
+   * Contructor
+   */
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.name = contentData.authordetail.name;
-    this.introduction = contentData.authordetail.shortIntroduction;
-    this.image = contentData.authordetail.profilePicture;
+    this.name = contentData.basicdetail.name;
+    this.introduction = contentData.basicdetail.shortIntroduction;
+    this.image = contentData.basicdetail.profilePicture;
     this.currentYear = new Date().getFullYear();
+    this.designation = contentData.basicdetail.designation;
+    this.currentCompany = contentData.basicdetail.currentCompany;
 
     if (this.actionlinks.length <= 0 || this.actionlinks === null) {
       contentData.actionlinks.forEach(record => {
         this.actionlinks.push(record)
       });
+
+      this.actionlinks = this.actionlinks.slice(1)
     }
+
+
+    
 
     
 
