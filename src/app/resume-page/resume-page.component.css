@@ -1,85 +1,17 @@
-/* .introduction{
-    width: 25%;
+.profile-picture{
+
 }
 
-.introduction-img{
-    width: 100%;
-} */
 
-.resume-profile-pic{
-  background-color: lightskyblue;
+.skills-sets{
+  background-color: steelblue;
 }
 
-.experiences{
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
+.skills-sets-records-record-skills{
+  font-size: 12px;
 }
 
-.experiences-records{
-  border-radius: 5px;
-  background-color: aquamarine;
-}
 
-.experiences-record-basic-details h4, section p{
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.experiences-record-work-details{
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.experiences-record-work-details h5{
-  font-size: 15px;
-}
-
-.experiences-record-work-details p, ul li{
-  font-size: small;
-}
-
-.interests{
-    width: fit-content;
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
-}
-
-.acknowledgment{
-    width: fit-content;
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
-}
-
-.languages{
-    width: fit-content;
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
-}
-
-.skillsets{
-    width: fit-content;
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
-}
-
-.skillsets-skill{
-    border-radius: 5px;
-    background-color: darkseagreen;
-}
-
-.skillsets-skill span{
-    cursor: pointer;
-}
-
-.contacts{
-    height: max-content;
-    width: fit-content;
-    background-color: snow;
-    border: 1px dashed black;
-    border-radius: 5px;
+.contact-list{
+  background-color: tomato;
 }
