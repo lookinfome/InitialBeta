@@ -20,9 +20,28 @@ export class AppComponent {
     icon: string
   }[]=[]
 
+
+  activelinkcounter: boolean = false;
+  activelinkstatus: string = "";
+  actionlinks: {
+    action: string,
+    link: string
+  }[]=[]
+
+  actionlinkactive():string{
+    if(!this.activelinkcounter)
+    {
+      this.activelinkcounter = true;
+      return this.activelinkcounter?"active": ""
+    }
+
+    this.activelinkcounter = !this.activelinkcounter;
+    return ""
+  }
+
   constructor(private router: Router) { }
 
-  ngOnInit() 
+  ngOnInit()
   {
     this.name = contentData.basicdetail.name;
     this.currentYear = new Date().getFullYear();
@@ -39,13 +58,22 @@ export class AppComponent {
             icon: record.icon
           }
         )
-  
+
       })
 
       this.contactDetails = this.contactDetails.slice(3)
     }
-    
+
+    if(this.actionlinks.length <= 0 || this.actionlinks === null)
+    {
+      contentData.actionlinks.forEach(record=>{
+        this.actionlinks.push(record)
+      })
+
+      this.actionlinks = this.actionlinks.slice(1);
+    }
+
   }
-  
-  
+
+
 }

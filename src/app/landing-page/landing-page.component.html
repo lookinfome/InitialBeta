@@ -33,7 +33,7 @@
 
           <!-- action links -->
           <div class="action-links d-flex justify-content-between">
-            <div class="action-links-link" *ngFor="let link of actionlinks">
+            <div class="action-links-link d-none d-lg-block mx-1" *ngFor="let link of actionlinks">
               <a [routerLink]="[link.link]"> {{link.action}} </a>
             </div>
           </div>
