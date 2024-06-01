@@ -22,6 +22,11 @@
         "icon": "<i class=\"fas fa-phone-square\"></i>"
       },
       {
+        "type": "chess.com",
+        "value": "https://www.chess.com/member/lookinfome",
+        "icon": "<i class=\"fas fa-chess-knight\"></i>"
+      },
+      {
         "type": "linkedin",
         "value": "https://www.linkedin.com/in/lookingforme/",
         "icon": "<i class=\"fab fa-linkedin\"></i>"

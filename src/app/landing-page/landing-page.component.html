@@ -1,36 +1,48 @@
-<!-- main body -->
+<!-- landing page main body -->
+<div class="container landing-parent-div">
 
-<div class="landing-page-parent-div">
+  <!-- basic details -->
+  <div class="row mt-5">
 
-    <!-- Visiting card -->
-    <div class="visting-card d-flex mx-auto mt-5">
+    <div class="col-lg-12 basic-details">
 
-        <!-- Profile picture -->
-        <div class="profile-pic mx-3 mt-auto mb-auto">
-            <img [src]="image" alt="profile-picture">
+      <div class="row">
+
+        <!-- profile picture -->
+        <div class="col-lg-5 col-md-12 profile-picture text-center">
+          <div class="profile-picture-container d-flex justify-content-center justify-content-lg-end d-flex align-items-center">
+            <img src="../../assets/profile-pic-1.png" alt="profile-picture">
+          </div>
         </div>
 
-        <!-- Visiting card content -->
-        <div class="visting-card-content">
+        <!-- basic info -->
+        <div class="col-lg-7 col-md-12 basic-info mt-3">
 
-            <!-- Short introduction -->
-            <div class="short-introduction p-2">
-                <h1>{{name}}</h1>
-                <h5>{{designation}} | {{currentCompany}}</h5>
+          <!-- name, designation and current company -->
+          <div class="basic-info-part1">
+            <h1>{{name}}</h1>
+            <span> {{designation}} | {{currentCompany}} </span>
+          </div>
+          <br>
 
-                <h3 class="">A bit about me</h3>
-                <p>
-                    {{introduction}}
-                </p>
+          <!-- introduction -->
+          <div class="basic-info-part2">
+            <h5>A bit about me</h5>
+            <p>{{introduction}}</p>
+          </div>
 
-                <!-- Action links -->
-                <div class="action-links d-flex justify-content-between">
-                    <a *ngFor="let link of actionlinks" [routerLink]="[link.link]">
-                        {{link.action}}
-                    </a>
-                </div>
+          <!-- action links -->
+          <div class="action-links d-flex justify-content-between">
+            <div class="action-links-link" *ngFor="let link of actionlinks">
+              <a [routerLink]="[link.link]"> {{link.action}} </a>
             </div>
+          </div>
+
         </div>
+      </div>
+
+
     </div>
 
+  </div>
 </div>
