@@ -1,158 +1,329 @@
 {
-    "basicdetail": {
-        "name": "Vivek Kumar",
-        "designation": "Senior Analyst",
-        "currentCompany": "Capgemini",
-        "shortIntroduction": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
-        "profilePicture": "../../assets/dummy-profile-pic.jpg",
-        "contactDetails": [
-            {
-                "type": "location",
-                "value": "Kolkata, West Bengal, India",
-                "icon": "<i class=\"fas fa-map-pin\"></i>"
-            },
-            {
-                "type": "email",
-                "value": "vivekkr8235@gmail.com",
-                "icon": "<i class=\"fas fa-envelope-square\"></i>"
-            },
-            {
-                "type": "phone",
-                "value": "+91-7854-894496",
-                "icon": "<i class=\"fas fa-phone-square\"></i>"
-            },
-            {
-                "type": "linkedin",
-                "value": "https://www.linkedin.com/in/lookingforme/",
-                "icon": "<i class=\"fab fa-linkedin\"></i>"
-            },
-            {
-                "type": "twitter",
-                "value": "vivekkr8235@gmail.com",
-                "icon": "<i class=\"fab fa-twitter-square\"></i>"
-            },
-            {
-                "type": "instagram",
-                "value": "vivekkr8235@gmail.com",
-                "icon": "<i class=\"fab fa-instagram\"></i>"
-            }
-        ],
-        "languages": [
-            {
-                "name": "Hindi",
-                "icon": ""
-            },
-            {
-                "name": "English",
-                "icon": ""
-            }
-        ],
-        "interests": [
-            {
-                "interest": "Chess",
-                "icon": "<i class=\"fas fa-chess\"></i>"
-            },
-            {
-                "interest": "Video Games",
-                "icon": "<i class=\"fas fa-gamepad\"></i>"
-            },
-            {
-                "interest": "Geo-Politics",
-                "icon": "<i class=\"fas fa-globe-americas\"></i>"
-            }
-        ]
-    },
-    "resumedetails": {
-        "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
-        "experiences":[
-            {
-                "company": "",
-                "workdetail": "",
-                "starttime": "",
-                "endtime": "",
-                "location": "",
-                "responsibilities": []
-            }
-        ],
-        "skillset": [
-            {
-                "category": "Technical",
-                "skills": [
-                    {"name": "MVC .NET Framework", "icon": ""},
-                    {"name": "C#/CSharp", "icon": ""},
-                    {"name": "TypeScript", "icon": ""},
-                    {"name": "JavaScript", "icon": ""},
-                    {"name": "Angular", "icon": ""},
-                    {"name": "MySQL", "icon": ""},
-                    {"name": "HTML5", "icon": ""},
-                    {"name": "CSS", "icon": ""},
-                    {"name": "Bootstrap", "icon": ""}
-                ]
-            },
-            {
-                "category": "Analytical",
-                "skills": [
-                    {"name": "R&D", "icon": ""},
-                    {"name": "Application Audit & Analysis", "icon": ""},
-                    {"name": "Analytical Dashboards", "icon": ""}
-                ]
-            },
-            {
-                "category": "Support",
-                "skills": [
-                    {"name": "Support Lead", "icon": ""},
-                    {"name": "Ticket Management (Incident, Service Requests)", "icon": ""},
-                    {"name": "Change Request Delivery", "icon": ""},
-                    {"name": "DR Drill Management", "icon": ""},
-                    {"name": "Vulnerability Mitigation", "icon": ""},
-                    {"name": "Server Maintenance", "icon": ""},
-                    {"name": "Documentation", "icon": ""}
-                ]
-            },
-            {
-                "category": "QA",
-                "skills": [
-                    {"name": "Test Plan Creation", "icon": ""},
-                    {"name": "Test Case Execution & Debugging", "icon": ""},
-                    {"name": "Root Cause Analysis", "icon": ""}
-                ]
-            },
-            {
-                "category": "Tools & Applications",
-                "skills": [
-                    {"name": "Sinequa Enterprise Search", "icon": ""},
-                    {"name": "Postman", "icon": ""},
-                    {"name": "Notepad++", "icon": ""},
-                    {"name": "Figma", "icon": ""},
-                    {"name": "Canva", "icon": ""},
-                    {"name": "PowerBI", "icon": ""}
-                    
-                ]
-            }
-        ],
-        
-        "acheivements":[]
-    },
-    "actionlinks": [
-        {
-            "action": "Home",
-            "link": "/landing-page"
-        },
-        {
-            "action": "Resume",
-            "link": "/resume-page"
-        },
-        {
-            "action": "Portfolio",
-            "link": "/portfolio-page"
-        },
-        {
-            "action": "Contacts",
-            "link": "/contact-page"
-        },
-        {
-            "action": "Feedbacks",
-            "link": "/feedback-page"
-        }
+  "basicdetail": {
+    "name": "Vivek Kumar",
+    "designation": "Senior Analyst",
+    "currentCompany": "Capgemini",
+    "shortIntroduction": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
+    "profilePicture": "../../assets/profile-pic-1.png",
+    "contactDetails": [
+      {
+        "type": "location",
+        "value": "Kolkata, West Bengal, India",
+        "icon": "<i class=\"fas fa-map-pin\"></i>"
+      },
+      {
+        "type": "email",
+        "value": "vivekkr8235@gmail.com",
+        "icon": "<i class=\"fas fa-envelope-square\"></i>"
+      },
+      {
+        "type": "phone",
+        "value": "+91-7854-894496",
+        "icon": "<i class=\"fas fa-phone-square\"></i>"
+      },
+      {
+        "type": "linkedin",
+        "value": "https://www.linkedin.com/in/lookingforme/",
+        "icon": "<i class=\"fab fa-linkedin\"></i>"
+      },
+      {
+        "type": "twitter",
+        "value": "vivekkr8235@gmail.com",
+        "icon": "<i class=\"fa-brands fa-twitter\"></i>"
+      },
+      {
+        "type": "instagram",
+        "value": "vivekkr8235@gmail.com",
+        "icon": "<i class=\"fab fa-instagram\"></i>"
+      },
+      {
+        "type": "github",
+        "value": "https://github.com/lookinfome",
+        "icon": "<i class=\"fa-brands fa-github\"></i>"
+      }
+    ],
+    "languages": [
+      {
+        "name": "Hindi",
+        "icon": ""
+      },
+      {
+        "name": "English",
+        "icon": ""
+      }
+    ],
+    "interests": [
+      {
+        "interest": "Chess",
+        "icon": "<i class=\"fas fa-chess\"></i>"
+      },
+      {
+        "interest": "Video Games",
+        "icon": "<i class=\"fas fa-gamepad\"></i>"
+      },
+      {
+        "interest": "Geo-Politics",
+        "icon": "<i class=\"fas fa-globe-americas\"></i>"
+      }
     ]
+  },
+  "resumedetails": {
+    "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
+    "experiences": [
+      {
+        "company": "Capgemini",
+        "designation": "Senior Analyst",
+        "time": "January 2023 - Present",
+        "location": "Kolkata, West Bengal, India",
+        "workdetail": {
+          "pointers": [
+            {
+              "category": "Enterprise Search Engine Application",
+              "description": "As a quick highlight on my current with role of Senior analyst, I advanced to development side of application, from last four months involved in R&D of GenAI and integration with enterprise search application, understanding the core functionality of Large Language Model and its mechanism using Retrieval Augment and Generation technique and what features we can offer to end-users ensuring the organization’s data privacy and security. Though below are the daily activities I am involved in,",
+              "responsibilities": [
+                "Research and Development of application for feature exploration and enhancement",
+                "Writing and building plug-ins using C# for application",
+                "Log analysis of components like Engine, Web-app, Indexer to identify, understand and troubleshoot application’s issues",
+                "Working on integration latest version of data source connectors like Yammer, Drupal, Web Crawler, Database, etc. with Enterprise Search",
+                "Ensuring the data validity and quality between search engine and data sources",
+                "API creation for third-party to access data, while ensuring authorization",
+                "Building search UI using SBAs"
+              ]
+            },
+            {
+              "category": "Analytics & Dashboard",
+              "description": "Based on user’s activity on Search Engine, need to present insights to business as per their requirement and that includes",
+              "responsibilities": [
+                "Creating analytics board using SBAs",
+                "Data auditing and analysis using SQL",
+                "API creation and testing with Postman",
+                "Developing full-scale custom analytical dashboard (backend + frontend)"
+              ]
+            },
+            {
+              "category": "Support Activities",
+              "description": "Handling support activities to ensure application up and running 24*7 including",
+              "responsibilities": [
+                "Vulnerability mitigation (server and application)",
+                "Server maintenance (resolving disk space, CPU and memory high utilization issue)",
+                "Incident Resolution, Service Request and Change Request Delivery",
+                "Conduct and Manage yearly activities like application’s DR Drill",
+                "Actively supports on-call activities",
+                "Ensuring other activities like SSL certification installation and updates"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "company": "Capgemini",
+        "designation": "Analyst",
+        "time": "August 2021 - January 2023",
+        "location": "Bangalore, Karnatka, India",
+        "workdetail": {
+          "pointers": [
+            {
+              "category": "Research and Analysis",
+              "description": "Started with role of Analyst in Enterprise Search Application, a product by Sinequa, on which whole organization relies for interaction with company’s data, interesting project where I was involved mainly in below activities,",
+              "responsibilities": [
+                "Understanding enterprise search engine, including its workflow, integrations, network, security scopes with SSO and scalability, user features",
+                "Few features involved like, search engine behaviors with different languages based on priority, search engine auto-correction logic and working, etc.",
+                "Periodically go-through product’s news letter to get up-to-date with latest features, and ready analysis report on its feasibility based on our user base and requirement"
+              ]
+            },
+            {
+              "category": "Support Activities",
+              "description": "Handling support activities to ensure application up and running 24*7 including",
+              "responsibilities": [
+                "Managing calls with product vendor and ensuring on-time bug fix deliveries, and tech support",
+                "Preparation of analysis report on alerts received through telemetry applications like Science Logic and Dynatrace",
+                "Vulnerability mitigation (server and application)",
+                "Server maintenance (resolving disk space, CPU and memory high utilization issue)",
+                "Incident Resolution, Service Request and Change Request Delivery",
+                "Actively supports on-call activities",
+                "Ensuring other activities like SSL certification installation and updates"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "company": "Capgemini",
+        "designation": "Intern",
+        "time": "June 2021 - July 2021",
+        "location": "Kolkata, West Bengal, India",
+        "workdetail": {
+          "pointers": [
+            {
+              "category": "Dot Net Developer Intern",
+              "description": "Joined Capgemini as intern and secured third rank successfully while completing a competitive assessment, multiple tests and built full-scale website post understanding given user story, analyzing the pain points, efficient resolution while using skills I learned throughout the 2 months training which were C#, .NET framework, SQL, HTML, CSS, etc.",
+              "responsibilities": []
+            }
+          ]
+        }
+      }
+    ],
+    "skillset": [
+      {
+        "category": "Technical",
+        "skills": [
+          {
+            "name": "MVC .NET Framework",
+            "icon": ""
+          },
+          {
+            "name": "C#/CSharp",
+            "icon": ""
+          },
+          {
+            "name": "TypeScript",
+            "icon": ""
+          },
+          {
+            "name": "JavaScript",
+            "icon": ""
+          },
+          {
+            "name": "Angular",
+            "icon": ""
+          },
+          {
+            "name": "MySQL",
+            "icon": ""
+          },
+          {
+            "name": "HTML5",
+            "icon": ""
+          },
+          {
+            "name": "CSS",
+            "icon": ""
+          },
+          {
+            "name": "Bootstrap",
+            "icon": ""
+          }
+        ]
+      },
+      {
+        "category": "Analytical",
+        "skills": [
+          {
+            "name": "R&D",
+            "icon": ""
+          },
+          {
+            "name": "Application Audit & Analysis",
+            "icon": ""
+          },
+          {
+            "name": "Analytical Dashboards",
+            "icon": ""
+          }
+        ]
+      },
+      {
+        "category": "Support",
+        "skills": [
+          {
+            "name": "Support Lead",
+            "icon": ""
+          },
+          {
+            "name": "Ticket Management (Incident, Service Requests)",
+            "icon": ""
+          },
+          {
+            "name": "Change Request Delivery",
+            "icon": ""
+          },
+          {
+            "name": "DR Drill Management",
+            "icon": ""
+          },
+          {
+            "name": "Vulnerability Mitigation",
+            "icon": ""
+          },
+          {
+            "name": "Server Maintenance",
+            "icon": ""
+          },
+          {
+            "name": "Documentation",
+            "icon": ""
+          }
+        ]
+      },
+      {
+        "category": "QA",
+        "skills": [
+          {
+            "name": "Test Plan Creation",
+            "icon": ""
+          },
+          {
+            "name": "Test Case Execution & Debugging",
+            "icon": ""
+          },
+          {
+            "name": "Root Cause Analysis",
+            "icon": ""
+          }
+        ]
+      },
+      {
+        "category": "Tools & Applications",
+        "skills": [
+          {
+            "name": "Sinequa Enterprise Search",
+            "icon": ""
+          },
+          {
+            "name": "Postman",
+            "icon": ""
+          },
+          {
+            "name": "Notepad++",
+            "icon": ""
+          },
+          {
+            "name": "Figma",
+            "icon": ""
+          },
+          {
+            "name": "Canva",
+            "icon": ""
+          },
+          {
+            "name": "PowerBI",
+            "icon": ""
+          }
+        ]
+      }
+    ],
+    "acheivements": []
+  },
+  "actionlinks": [
+    {
+      "action": "Home",
+      "link": "/landing-page"
+    },
+    {
+      "action": "Resume",
+      "link": "/resume-page"
+    },
+    {
+      "action": "Portfolio",
+      "link": "/portfolio-page"
+    },
+    {
+      "action": "Contacts",
+      "link": "/contact-page"
+    },
+    {
+      "action": "Feedbacks",
+      "link": "/feedback-page"
+    }
+  ]
 }

@@ -2,46 +2,145 @@
 
 <div class="container resume-page-parent-div">
 
-    <div class="d-flex">
-        <!-- introduction -->
-        <div class="card introduction mt-3">
-            <img style="height: 300px !important;" class="introduction-img" src="../../assets/dummy-profile-pic-1.jpg"
-                class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">Vivek Kumar</h5>
 
-                <!-- about me -->
-                <p class="card-text">
-                    Always a student, motivated to learn new things around work, taking new challenges
-                    while being optimistic but not overconfident.
-                </p>
-            </div>
+  <!-- intorduction and contacts -->
+
+  <div class="row row-cols-2">
+
+    <!-- introduction -->
+    <div class="col-3 mt-3">
+      <div class="introduction card">
+        <img class="card-img-top resume-profile-pic" style="height: 100% !important;" class="introduction-img" src="../../assets/profile-pic-3.png">
+        <div class="card-body">
+            <h5 style="font-size: 15px;" class="card-title text-center"><b>Vivek Kumar</b></h5>
+            <!-- about me -->
+            <p class="card-text">
+                <!-- Always a student, motivated to learn new things around work, taking new challenges
+                while being optimistic but not overconfident. -->
+            </p>
         </div>
 
-
-        <!-- experiences -->
-        <div class="experiences mt-3 mx-2">
-
+        <!-- contacts -->
+        <div class="card-header">
+          <i class="fas fa-mobile-alt"></i>
+            Contacts
         </div>
+        <ul class="list-group list-group-flush" *ngFor="let contact of contactDetails">
+          <li class="list-group-item">
+            <i [class]="extractClassNames(contact.icon)"></i>
+            <span class="mx-2">{{contact.value}}</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- skillsets -->
-    <div class="skillsets mt-3">
-        <h5 class="mx-2 mt-2">
-            <i class="fas fa-user-cog"></i>
-            Skills
-        </h5>
-        <div class="skillsets-items d-flex mb-2">
-            <div *ngFor="let skillset of skillsets">
-                <div class="skillsets-skill mx-1 p-1">
-                    <p>{{ skillset.category }}</p>
-                    <span *ngFor="let skill of skillset.skills" class="mx-1 badge bg-success text-dark">
-                        {{ skill.name }}
-                    </span>
-                </div>
+    <!-- contacts -->
+    <!-- <div class="col-2 mt-3">
+      <h5 class="mx-2 mt-2">
+        <i class="fas fa-mobile-alt"></i>
+        Contacts
+      </h5>
+      <div class="contacts-items d-flex mb-2">
+        <div *ngFor="let contact of contactDetails" class="mx-1 d-flex justify-content-between">
+          <span class="mx-1" [innerHTML]="contact.icon"></span>
+          <span class="badge bg-warning text-dark"></span>
+        </div>
+      </div>
+
+    </div> -->
+
+
+    <!-- experiences -->
+    <!-- <div class="col-10">
+      <div class="experiences-details d-flex">
+        <div class="experiences mt-3">
+          <h5 class="mt-2 mx-2">
+            <i class="fas fa-briefcase"></i>
+            Experiences
+          </h5>
+          <div class="experiences-records" *ngFor="let experience of experiencesDetails">
+            <div class="experiences-record-basic-details">
+              <h4><b>{{experience.designation}}</b></h4>
+              <section class="d-flex justify-content-between">
+                <p>{{experience.company}} | {{experience.location}}</p>
+                <p>{{experience.time}}</p>
+              </section>
             </div>
+            <div class="experiences-record-work-details" *ngFor="let point of experience.workdetail.pointers">
+              <h5><b>{{point.category}}</b></h5>
+              <p>{{ point.description }}</p>
+              <ul>
+                <li *ngFor="let responsibility of point.responsibilities">{{ responsibility }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <!-- skillsets -->
+
+  <div class="row row-cols-12">
+    <div class="col-12 mt-3">
+      <h5 class="mx-2">
+        <i class="fas fa-user-cog"></i>
+        Skills
+      </h5>
+    </div>
+
+    <div class="col-3" *ngFor="let skillset of skillsets">
+      <p>{{ skillset.category }}</p>
+      <span *ngFor="let skill of skillset.skills" class="mx-1 badge bg-success text-dark">
+          {{ skill.name }}
+      </span>
+    </div>
+  </div>
+
+  <!-- interest, and languages -->
+
+  <div class="row row-cols-12">
+
+
+  </div>
+
+
+
+<div class="container resume-page-parent-div">
+
+  <!-- introduction and experiences -->
+
+  <div class="d-flex align-items-start">
+
+
+
+
+
+
+  </div>
+
+  <!-- contacts -->
+  <div class="contacts mt-3 mx-3">
+    <h5 class="mx-2 mt-2">
+        <i class="fas fa-mobile-alt"></i>
+        Contacts
+    </h5>
+    <div class="contacts-items d-flex mb-2">
+        <div *ngFor="let contact of contactDetails" class="mx-1 d-flex justify-content-center">
+            <span class="mx-1" [innerHTML]="contact.icon"></span>
+            <span class="badge bg-warning text-dark mx-1">{{contact.value}}</span>
         </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+
 
     <!-- interests and langugaes -->
     <div class="d-flex">
@@ -76,19 +175,7 @@
             </div>
         </div>
 
-        <!-- contacts -->
-        <div class="contacts mt-3">
-            <h5 class="mx-2 mt-2">
-                <i class="fas fa-mobile-alt"></i>
-                Contacts
-            </h5>
-            <div class="contacts-items d-flex mb-2">
-                <div *ngFor="let contact of contactDetails" class="mx-1 d-flex justify-content-center">
-                    <span class="mx-2" [innerHTML]="contact.icon"></span>
-                    <span class="badge bg-warning text-dark">{{contact.value}}</span>
-                </div>
-            </div>
-        </div>
+
 
     </div>
 

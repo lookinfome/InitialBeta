@@ -22,12 +22,12 @@ export class ResumePageComponent {
     icon: string
   }[] = [];
 
-  skillsets: { 
-    category: string, 
-    skills: { 
-      name: string, 
-      icon: string 
-    }[] 
+  skillsets: {
+    category: string,
+    skills: {
+      name: string,
+      icon: string
+    }[]
   }[] = [];
 
   contactDetails: {
@@ -35,6 +35,30 @@ export class ResumePageComponent {
     value: string,
     icon: string
   }[]=[]
+
+  experiencesDetails:{
+    company: string,
+    designation: string,
+    time: string,
+    location: string,
+    workdetail: {
+      pointers: {
+        category: string,
+        description: string,
+        responsibilities: string[]
+      }[]
+    }
+  }[]=[]
+
+
+  // Function to extract class names
+  extractClassNames(iconHtml: string): string {
+    const div = document.createElement('div');
+    div.innerHTML = iconHtml;
+    const iconElement = div.querySelector('i');
+    return iconElement ? iconElement.className : '';
+  }
+
 
   ngOnInit()
   {
@@ -48,7 +72,7 @@ export class ResumePageComponent {
      * Populating the interests array
      */
     contentData.basicdetail.interests.forEach(interest=>{
-      
+
       this.interests.push(
         {
           interest: interest.interest,
@@ -56,13 +80,13 @@ export class ResumePageComponent {
         }
       )
     });
-    
+
     /**
      * Populating the languages array
      */
 
     contentData.basicdetail.languages.forEach(language=>{
-      
+
       this.languages.push(
         {
           name: language.name,
@@ -85,7 +109,7 @@ export class ResumePageComponent {
     /**
      * Populating the contactlist array
      */
-    
+
     if (this.contactDetails.length <= 0 || this.contactDetails === null)
     {
       contentData.basicdetail.contactDetails.forEach(record=>{
@@ -96,11 +120,22 @@ export class ResumePageComponent {
             icon: record.icon
           }
         )
-  
+
       })
 
       this.contactDetails = this.contactDetails.slice(0,3)
     }
+
+    /**
+     * Populating the experiencesdetails array
+     */
+
+    if(this.experiencesDetails.length <=0 || this.experiencesDetails === null){
+      contentData.resumedetails.experiences.forEach(record=>{
+        this.experiencesDetails.push(record);
+      })
+    }
+
 
   }
 }
