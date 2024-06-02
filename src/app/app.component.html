@@ -16,7 +16,7 @@
     <!-- navbar collapsible items -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item" [ngClass]="actionlinkactive()" *ngFor="let action of actionlinks">
+        <li class="nav-item" (onclick)="actionlinkactive()" *ngFor="let action of actionlinks">
           <a class="nav-link" aria-current="page" [routerLink]="[action.link]">
             {{action.action}}
           </a>

@@ -1,0 +1,14 @@
+.contact-details{
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-details:hover{
+  box-shadow: 10px 10px 10px lightgrey;
+  padding: 10px;
+}
+
+.contact-details-img{
+  height: 100px;
+  width: 100px;
+}

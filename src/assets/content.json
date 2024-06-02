@@ -22,7 +22,7 @@
         "icon": "<i class=\"fas fa-phone-square\"></i>"
       },
       {
-        "type": "chess.com",
+        "type": "chess",
         "value": "https://www.chess.com/member/lookinfome",
         "icon": "<i class=\"fas fa-chess-knight\"></i>"
       },
@@ -33,12 +33,12 @@
       },
       {
         "type": "twitter",
-        "value": "vivekkr8235@gmail.com",
+        "value": "https://x.com/lookinfome",
         "icon": "<i class=\"fa-brands fa-twitter\"></i>"
       },
       {
         "type": "instagram",
-        "value": "vivekkr8235@gmail.com",
+        "value": "https://www.instagram.com/lookinfome",
         "icon": "<i class=\"fab fa-instagram\"></i>"
       },
       {
@@ -317,10 +317,6 @@
     {
       "action": "Resume",
       "link": "/resume-page"
-    },
-    {
-      "action": "Portfolio",
-      "link": "/portfolio-page"
     },
     {
       "action": "Contacts",

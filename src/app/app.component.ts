@@ -34,7 +34,6 @@ export class AppComponent {
       this.activelinkcounter = true;
       return this.activelinkcounter?"active": ""
     }
-
     this.activelinkcounter = !this.activelinkcounter;
     return ""
   }

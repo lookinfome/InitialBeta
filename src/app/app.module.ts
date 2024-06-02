@@ -7,19 +7,25 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
 
 
 import { RouterModule } from '@angular/router';
+import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { FeedbacksPageComponent } from './feedbacks-page/feedbacks-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    ResumePageComponent
+    ResumePageComponent,
+    ContactsPageComponent,
+    FeedbacksPageComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/landing-page', pathMatch: 'full' },
       { path: 'landing-page', component: LandingPageComponent },
-      { path: 'resume-page', component: ResumePageComponent }
+      { path: 'resume-page', component: ResumePageComponent },
+      { path: 'contact-page', component: ContactsPageComponent },
+      { path: 'feedback-page', component: FeedbacksPageComponent }
     ])
   ],
   providers: [],
