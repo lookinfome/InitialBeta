@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 
 interface ActionLinks {
   action: string,
-  link: string
+  link: string,
 }
 
 @Component({
@@ -26,6 +26,7 @@ export class LandingPageComponent implements OnInit {
   designation: string = "";
   currentYear: number = 2024;
 
+
   /**
    * Contructor
    */
@@ -40,17 +41,21 @@ export class LandingPageComponent implements OnInit {
     this.currentCompany = contentData.basicdetail.currentCompany;
 
     if (this.actionlinks.length <= 0 || this.actionlinks === null) {
+      let i=0;
       contentData.actionlinks.forEach(record => {
-        this.actionlinks.push(record)
+        this.actionlinks.push({
+          action: record.action,
+          link: record.link
+        })
       });
 
       this.actionlinks = this.actionlinks.slice(1)
     }
 
 
-    
 
-    
+
+
 
   }
 

@@ -55,8 +55,8 @@ export class ContactsPageComponent {
                 value: record.value,
                 icon: "../../assets/twitter.png",
                 passage: "TBH I don't tweet much, but trust me I am there!",
-                button: "Follow this button",
-                boxcolor: "10px 10px 10px #0077B5"
+                button: "Meet me on other side",
+                boxcolor: "background-color: #0077B5"
               })
             break;
 
@@ -65,11 +65,22 @@ export class ContactsPageComponent {
                 type: record.type,
                 value: record.value,
                 icon: "../../assets/github.png",
-                passage: "Let's crush those damn bugs together, or crush those bugs!",
+                passage: "Let's stalk each other's code, or crush those damn bugs!",
                 button: "Hop on buddy",
                 boxcolor: ""
               })
             break;
+
+            // case "chess":
+            //   this.contactDetailsInfo.push({
+            //     type: `${record.type}.com`,
+            //     value: record.value,
+            //     icon: "../../assets/github.png",
+            //     passage: "Let's stalk each other's code, or crush those damn bugs!",
+            //     button: "Hop on buddy",
+            //     boxcolor: ""
+            //   })
+            // break;
 
             default: break;
           }

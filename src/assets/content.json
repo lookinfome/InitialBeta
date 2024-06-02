@@ -14,12 +14,12 @@
       {
         "type": "email",
         "value": "vivekkr8235@gmail.com",
-        "icon": "<i class=\"fas fa-envelope-square\"></i>"
+        "icon": "<i class=\"fas fa-envelope\"></i>"
       },
       {
         "type": "phone",
         "value": "+91-7854-894496",
-        "icon": "<i class=\"fas fa-phone-square\"></i>"
+        "icon": "<i class=\"fas fa-mobile-alt\"></i>"
       },
       {
         "type": "chess",

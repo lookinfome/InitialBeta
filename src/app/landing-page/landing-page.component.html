@@ -11,7 +11,7 @@
         <!-- profile picture -->
         <div class="col-lg-5 col-md-12 profile-picture text-center">
           <div class="profile-picture-container d-flex justify-content-center justify-content-lg-end d-flex align-items-center">
-            <img src="../../assets/profile-pic-1.png" alt="profile-picture">
+            <img class="image-profile" src="../../assets/profile-pic-1.png" alt="profile-picture">
           </div>
         </div>
 
@@ -33,8 +33,13 @@
 
           <!-- action links -->
           <div class="action-links d-flex justify-content-between">
-            <div class="action-links-link d-none d-lg-block mx-1" *ngFor="let link of actionlinks">
-              <a [routerLink]="[link.link]"> {{link.action}} </a>
+            <div
+              class="action-links-link d-none d-lg-block mx-1" *ngFor="let link of actionlinks">
+              <a [routerLink]="[link.link]"
+              >
+
+                {{link.action}}
+              </a>
             </div>
           </div>
 

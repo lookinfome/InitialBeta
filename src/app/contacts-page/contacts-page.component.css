@@ -1,14 +1,32 @@
-.contact-details{
+
+.contact-details section{
+  border-radius: 20px;
   padding: 10px;
   transition: 0.5s ease-in-out;
 }
 
-.contact-details:hover{
-  box-shadow: 10px 10px 10px lightgrey;
+.contact-details section:hover{
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px lightgrey;
   padding: 10px;
 }
 
 .contact-details-img{
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-details-link{
+  color: black;
+  background-color: #EEEEEE;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-details-link:hover{
+  color: white;
+  background-color: #222831;
+  text-decoration: none;
+  padding: 10px;
 }
