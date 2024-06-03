@@ -36,6 +36,16 @@ export class ResumePageComponent {
     icon: string
   }[]=[]
 
+  educationDetails: {
+    institution: string,
+    degree: string,
+    stream: string[],
+    year: string,
+    gradesystem: string,
+    score: string,
+    icon: string
+  }[]=[]
+
   experiencesDetails:{
     company: string,
     designation: string,
@@ -133,6 +143,16 @@ export class ResumePageComponent {
     if(this.experiencesDetails.length <=0 || this.experiencesDetails === null){
       contentData.resumedetails.experiences.forEach(record=>{
         this.experiencesDetails.push(record);
+      })
+    }
+
+    /**
+     * Populating the educationdetails array
+     */
+
+    if(this.educationDetails.length <= 0 || this.educationDetails === null){
+      contentData.resumedetails.educationdetails.forEach(record=>{
+        this.educationDetails.push(record);
       })
     }
 

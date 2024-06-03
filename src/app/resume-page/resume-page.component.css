@@ -3,28 +3,33 @@
 }
 
 .profile-pic{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px lightgray;
+  box-shadow: 1px 1px 15px lightgray;
 }
 
+.contacts-container, .interests-container{
+  width: 100%;
+}
 
-
-.contacts{
+.contacts, .interests, .educations{
+  border-radius: 20px;
   transition: 0.5s ease-in-out;
 }
 
-.contacts:hover{
-  box-shadow: 5px 5px 5px black;
+.contacts:hover, .interests:hover, .educations:hover{
+  border-radius: 20px;
+  box-shadow: 1px 5px 15px lightgray;
 }
 
-.contacts-lists, .interests-list{
+.contacts-lists, .interests-list, .education-lists{
+  margin-left: 5px;
   list-style-type: none;
   padding: 0;
 }
 
-.contacts-book-icon, .interests-icon{
+.contacts-book-icon, .interests-icon, .education-icon{
   height: 25px;
   width: 25px;
 }

@@ -13,10 +13,41 @@
         </section>
       </div>
 
-      <!-- education -->
+      <!-- educations and skills -->
       <div class="row">
-        <div class="col-lg-3">education</div>
-        <div class="col-lg-3">skills</div>
+        
+        <!-- educations -->
+        <div class="col-lg-4 education-container">
+
+          <section class="educations p-2">
+          
+            <!-- education-header -->
+            <h5 class="education-header d-flex align-items-start mb-3">
+              <img class="education-icon" src="../../assets/education.png" alt="education-icon">
+              <span class="mx-2">Education</span>
+            </h5>
+
+            <!-- education-list -->
+            <ul class="education-lists" *ngFor="let record of educationDetails">
+              <li>
+                <h5> 
+                  <span [innerHTML]="record.icon"></span>
+                  {{record.degree}} 
+                </h5>
+                <span> {{record.institution}} | {{record.year}} </span> <br>
+                <span *ngFor="let stream of record.stream"> 
+                  <b> {{stream}} </b> 
+                </span> <br>
+                <span> {{record.gradesystem}} - {{record.score}} </span>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- skills -->
+        <div class="col-lg-5">skills</div>
+
+        
       </div>
 
 
@@ -28,16 +59,21 @@
 
         <!-- profile picture -->
         <div class="col-lg-12 profile-pic-container">
-          <img class="profile-pic" src="../../assets/profile-pic-3.png" alt="profile-picture">
+          <img class="profile-pic" src="../../assets/dummy-profile-pic.jpg" alt="profile-picture">
         </div>
 
         <!-- contacts -->
         <div class="col-lg-12 mt-3 contacts-container">
+
           <section class="contacts p-2">
-            <h5 class="contacts-header">
+
+            <!-- contacts-header -->
+            <h5 class="contacts-header d-flex align-items-start mb-3">
               <img class="contacts-book-icon" src="../../assets/contacts.png" alt="contact-book-icon">
-              Contacts
+              <span class="mx-2">Contacts</span>
             </h5>
+
+            <!-- contact-lists -->
             <ul class="contacts-lists" *ngFor="let contact of contactDetails">
               <li>
                 <span [innerHTML]="contact.icon"></span>
@@ -49,10 +85,13 @@
 
         <!-- interests -->
         <div class="col-lg-12 mt-3 interests-container">
+
           <section class="interests p-2">
-            <h5 class="interests-header">
+          
+            <!-- interest-header -->
+            <h5 class="interests-header d-flex align-items-start mb-3"> 
               <img src="../../assets/interest.png" alt="interests-icon" class="interests-icon">
-              Interests
+              <span class="mx-2">Interests</span>
             </h5>
 
             <ul class="interests-list" *ngFor="let interest of interests">
@@ -63,10 +102,6 @@
             </ul>
           </section>
         </div>
-
-
-
-
 
       </div>
     </div>
