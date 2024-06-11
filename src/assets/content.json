@@ -72,7 +72,37 @@
       }
     ]
   },
-  "resumedetails": {
+  "noticeperioddetails": {
+    "noticeperiodstarttime": "",
+    "noticeperiodendtime": "",
+    "noticeperiodtotaldays": 90,
+    "noticeperioddaysremaining": 65,
+    "statusdetails":
+    {
+      "status": 1,
+      "message": "Currently Serving"
+    }
+
+  },
+  "actionlinks": [
+    {
+      "action": "Home",
+      "link": "/landing-page"
+    },
+    {
+      "action": "Resume",
+      "link": "/resume-page"
+    },
+    {
+      "action": "Contacts",
+      "link": "/contact-page"
+    },
+    {
+      "action": "Feedbacks",
+      "link": "/feedback-page"
+    }
+  ],
+  "resumedetails1": {
     "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
     "educationdetails": [
       {
@@ -329,34 +359,7 @@
     ],
     "acheivements": []
   },
-  "actionlinks": [
-    {
-      "action": "Home",
-      "link": "/landing-page"
-    },
-    {
-      "action": "Resume",
-      "link": "/resume-page"
-    },
-    {
-      "action": "Contacts",
-      "link": "/contact-page"
-    },
-    {
-      "action": "Feedbacks",
-      "link": "/feedback-page"
-    }
-  ],
-  "noticeperioddetails": {
-    "statusdetails":
-    {
-      "status": 1,
-      "message": "Currently Serving"
-    },
-    "noticeperiodtotaldays": 90,
-    "noticeperioddaysremaining": 65,
-    "noticeperiodstarttime": "",
-    "noticeperiodendtime": ""
-
+  "resumedetails": {
+    "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!"
   }
 }

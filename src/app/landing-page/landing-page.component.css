@@ -51,8 +51,9 @@
 .action-links-link a:hover{
   cursor: pointer;
   color: #222831;
+  font-weight: 800;
   box-shadow: 1px 1px 15px lightgray;
-  background-color: #EEEEEE;
+  background-color: #20c997;
 }
 
 .notice-period-widgets{

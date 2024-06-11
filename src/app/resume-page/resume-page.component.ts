@@ -11,148 +11,54 @@ export class ResumePageComponent {
 
 
   name: string = "";
-
-  interests: {
-    interest: string,
-    icon: string
-  }[] = [];
-
-  languages: {
-    name: string,
-    icon: string
-  }[] = [];
-
-  skillsets: {
-    category: string,
-    skills: {
-      name: string,
-      icon: string
-    }[]
-  }[] = [];
+  aboutme: string = "";
+  designation: string = "";
 
   contactDetails: {
     type: string,
     value: string,
     icon: string
-  }[]=[]
+  }[] =[]
 
-  educationDetails: {
-    institution: string,
-    degree: string,
-    stream: string[],
-    year: string,
-    gradesystem: string,
-    score: string,
+  interestsDetails: {
+    interest: string,
     icon: string
   }[]=[]
 
-  experiencesDetails:{
-    company: string,
-    designation: string,
-    time: string,
-    location: string,
-    workdetail: {
-      pointers: {
-        category: string,
-        description: string,
-        responsibilities: string[]
-      }[]
+  showAboutMeButtonValue = "About Me";
+  showAboutMe: boolean = true;
+  toggleShowAboutMe()
+  {
+    this.showAboutMe = !this.showAboutMe;
+    if(this.showAboutMe)
+    {
+      this.showAboutMeButtonValue = "About Me"
     }
-  }[]=[]
-
-
-  // Function to extract class names
-  extractClassNames(iconHtml: string): string {
-    const div = document.createElement('div');
-    div.innerHTML = iconHtml;
-    const iconElement = div.querySelector('i');
-    return iconElement ? iconElement.className : '';
+    else
+    {
+      this.showAboutMeButtonValue = "Flip Back"
+    }
   }
-
 
   ngOnInit()
   {
-    /**
-     * Name
-     */
-
     this.name = contentData.basicdetail.name;
+    this.aboutme = contentData.resumedetails.aboutme;
+    this.designation = contentData.basicdetail.designation;
 
-    /**
-     * Populating the interests array
-     */
-    contentData.basicdetail.interests.forEach(interest=>{
-
-      this.interests.push(
-        {
-          interest: interest.interest,
-          icon: interest.icon
-        }
-      )
-    });
-
-    /**
-     * Populating the languages array
-     */
-
-    contentData.basicdetail.languages.forEach(language=>{
-
-      this.languages.push(
-        {
-          name: language.name,
-          icon: language.icon
-        }
-      )
-    })
-
-    /**
-     * Populating the skillsets array
-     */
-
-    contentData.resumedetails.skillset.forEach(record=>{
-      this.skillsets.push({
-        category: record.category,
-        skills: record.skills
-      })
-    })
-
-    /**
-     * Populating the contactlist array
-     */
-
-    if (this.contactDetails.length <= 0 || this.contactDetails === null)
+    if(this.contactDetails.length <=0 || this.contactDetails === null)
     {
-      contentData.basicdetail.contactDetails.forEach(record=>{
-        this.contactDetails.push(
-          {
-            type: record.type,
-            value: record.value,
-            icon: record.icon
-          }
-        )
-
+      contentData.basicdetail.contactDetails.forEach(contact=>{
+        this.contactDetails.push(contact)
       })
 
       this.contactDetails = this.contactDetails.slice(0,3)
     }
 
-    /**
-     * Populating the experiencesdetails array
-     */
-
-    if(this.experiencesDetails.length <=0 || this.experiencesDetails === null){
-      contentData.resumedetails.experiences.forEach(record=>{
-        this.experiencesDetails.push(record);
-      })
-    }
-
-    /**
-     * Populating the educationdetails array
-     */
-
-    if(this.educationDetails.length <= 0 || this.educationDetails === null){
-      contentData.resumedetails.educationdetails.forEach(record=>{
-        this.educationDetails.push(record);
+    if(this.interestsDetails.length <=0 || this.interestsDetails === null)
+    {
+      contentData.basicdetail.interests.forEach(interest=>{
+        this.interestsDetails.push(interest)
       })
     }
 

@@ -1,110 +1,70 @@
 <!-- resume main body -->
 
 <div class="container resume-parent-div">
-  <div class="row mt-5">
+  <div class="row mt-5 d-flex justify-content-between">
 
-    <!--  -->
-    <div class="col-lg-9">
+    <!-- basic information: Name, Designation, About Me, and Contacts -->
 
-      <!-- basic details -->
-      <div class="row">
-        <section class="basic-info-container">
-          <h1>{{name}}</h1>
-        </section>
-      </div>
+    <div class="col-lg-5 basic-information-container">
 
-      <!-- educations and skills -->
-      <div class="row">
-        
-        <!-- educations -->
-        <div class="col-lg-4 education-container">
+      <section class="row p-4 basic-information" *ngIf="showAboutMe; else showAboutMeText">
 
-          <section class="educations p-2">
-          
-            <!-- education-header -->
-            <h5 class="education-header d-flex align-items-start mb-3">
-              <img class="education-icon" src="../../assets/education.png" alt="education-icon">
-              <span class="mx-2">Education</span>
-            </h5>
-
-            <!-- education-list -->
-            <ul class="education-lists" *ngFor="let record of educationDetails">
-              <li>
-                <h5> 
-                  <span [innerHTML]="record.icon"></span>
-                  {{record.degree}} 
-                </h5>
-                <span> {{record.institution}} | {{record.year}} </span> <br>
-                <span *ngFor="let stream of record.stream"> 
-                  <b> {{stream}} </b> 
-                </span> <br>
-                <span> {{record.gradesystem}} - {{record.score}} </span>
-              </li>
-            </ul>
-          </section>
-        </div>
-
-        <!-- skills -->
-        <div class="col-lg-5">skills</div>
-
-        
-      </div>
-
-
-    </div>
-
-    <!-- Profile picture, Contacts, Interests -->
-    <div class="col-lg-3">
-      <div class="row">
-
-        <!-- profile picture -->
-        <div class="col-lg-12 profile-pic-container">
-          <img class="profile-pic" src="../../assets/dummy-profile-pic.jpg" alt="profile-picture">
-        </div>
+        <!-- name and designation -->
+        <h1 class="">{{name.toUpperCase()}}</h1>
+        <h5 class="mb-5"> {{designation}} </h5>
 
         <!-- contacts -->
-        <div class="col-lg-12 mt-3 contacts-container">
+        <div class="contacts-container">
+          <div class="contact-details" *ngFor="let contact of contactDetails">
+            <span class="contact-details-type"> {{contact.type.substring(0,1).toUpperCase()}} </span>
+            <span class="contact-details-value mx-2"> {{contact.value}} </span>
+          </div>
 
-          <section class="contacts p-2">
-
-            <!-- contacts-header -->
-            <h5 class="contacts-header d-flex align-items-start mb-3">
-              <img class="contacts-book-icon" src="../../assets/contacts.png" alt="contact-book-icon">
-              <span class="mx-2">Contacts</span>
-            </h5>
-
-            <!-- contact-lists -->
-            <ul class="contacts-lists" *ngFor="let contact of contactDetails">
-              <li>
-                <span [innerHTML]="contact.icon"></span>
-                {{contact.value}}
-              </li>
-            </ul>
-          </section>
+          <!-- about me: button -->
+          <div class="about-me-container d-flex justify-content-end">
+            <button class="about-me-btn" (click)="toggleShowAboutMe()"> {{showAboutMeButtonValue}} </button>
+          </div>
         </div>
 
-        <!-- interests -->
-        <div class="col-lg-12 mt-3 interests-container">
+      </section>
 
-          <section class="interests p-2">
-          
-            <!-- interest-header -->
-            <h5 class="interests-header d-flex align-items-start mb-3"> 
-              <img src="../../assets/interest.png" alt="interests-icon" class="interests-icon">
-              <span class="mx-2">Interests</span>
-            </h5>
-
-            <ul class="interests-list" *ngFor="let interest of interests">
-              <li>
-                <span [innerHTML]="interest.icon"></span>
-                {{interest.interest}}
-              </li>
-            </ul>
-          </section>
+      <section class="row mt-3 p-4 d-flex justify-content-between interest-information-container">
+        <div *ngFor="let interest of interestsDetails">
+          <h5>
+            {{interest.interest}}
+          </h5>
         </div>
+      </section>
 
-      </div>
+      <!-- about me -->
+      <ng-template #showAboutMeText>
+        <section class="p-4">
+          <h5> {{aboutme}} </h5>
+
+          <!-- flip back: button -->
+          <div class="about-me-container mt-5 d-flex justify-content-end">
+            <button class="about-me-btn" (click)="toggleShowAboutMe()"> {{showAboutMeButtonValue}} </button>
+          </div>
+        </section>
+      </ng-template>
+
     </div>
+
+    <!-- work experience -->
+     <div class="col-lg-6 work-experience-container">
+
+      <section class="p-4">
+
+        <h1 class="d-flex justify-content-end"> {{"work experience".toUpperCase()}} </h1>
+
+        <app-work-exp-chart-doughnut-2-d></app-work-exp-chart-doughnut-2-d>
+
+      </section>
+
+
+
+
+     </div>
 
   </div>
 

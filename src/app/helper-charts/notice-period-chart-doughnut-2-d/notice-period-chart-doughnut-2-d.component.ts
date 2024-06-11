@@ -51,7 +51,7 @@ export class NoticePeriodChartDoughnut2DComponent {
                     <b>Total Days: ${contentData.noticeperioddetails.noticeperiodtotaldays}</b> <br>
                   `,
       showpercentvalues: "",
-      defaultcenterlabel: `<b>Status:</b>${contentData.noticeperioddetails.statusdetails.message}`,
+      defaultcenterlabel: `<b>Status:</b> ${contentData.noticeperioddetails.statusdetails.message}`,
       aligncaptionwithcanvas: "0",
       captionpadding: "0",
       decimals: "1",
