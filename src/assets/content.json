@@ -346,5 +346,17 @@
       "action": "Feedbacks",
       "link": "/feedback-page"
     }
-  ]
+  ],
+  "noticeperioddetails": {
+    "statusdetails":
+    {
+      "status": 1,
+      "message": "Currently Serving"
+    },
+    "noticeperiodtotaldays": 90,
+    "noticeperioddaysremaining": 65,
+    "noticeperiodstarttime": "",
+    "noticeperiodendtime": ""
+
+  }
 }

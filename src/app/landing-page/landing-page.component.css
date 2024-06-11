@@ -55,3 +55,18 @@
   background-color: #EEEEEE;
 }
 
+.notice-period-widgets{
+  transition: 0.5s ease-in-out;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.notice-period-widgets:hover{
+  width: auto;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px lightgray;
+  background-color: #EEEEEE;
+}
