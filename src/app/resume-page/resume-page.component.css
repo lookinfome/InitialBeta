@@ -1,45 +1,108 @@
-.basic-information-container{
+/* name, designation, contacts, and about me */
+.basic-information, .show-about-me-text-container {
   color: #FFFFFF;
-  border-radius: 20px;
   background-image: url("../../assets/background-1.jpg");
+  border-radius: 20px;
   transition: 0.5s ease-in-out;
-  min-height: 314px; /* Set a minimum height */
-  min-width: 610px; /* Set a minimum width */
-
+  min-height: 314px;
+  min-width: 610px;
   max-height: 314px;
   max-width: 610px;
 }
 
-.basic-information-container:hover{
+.basic-information:hover, .show-about-me-text-container:hover, .education-details:hover {
   cursor: pointer;
   border-radius: 20px;
   box-shadow: 1px 1px 15px #373A40;
 }
 
-.work-experience-container{
-  color: #FFFFFF;
-  border-radius: 20px;
-  transition: 0.5s ease-in-out;
-  background-image: url("../../assets/background-2.jpg");
-}
-
-.interest-information-container{
-  background-image: url("../../assets/background-3.png");
-}
-
-.work-experience-container:hover{
-  cursor: pointer;
-  border-radius: 20px;
-  box-shadow: 1px 1px 15px #373A40;
-}
-
-.contact-details-type, .contact-details-value
-{
+.contact-details-type, .contact-details-value {
   font-size: 25px;
 }
 
-.about-me-btn{
+.about-me-btn {
   border: none;
   background: none;
   color: #FFFFFF;
+}
+
+/* interests */
+.interest-details-container {
+  color: #FFFFFF;
+  background-image: url("../../assets/background-3.png");
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  min-height: 314px; /* Set a minimum height */
+  min-width: 610px; /* Set a minimum width */
+  max-height: 314px;
+  max-width: 610px;
+}
+
+.interest-details-container:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #373A40;
+}
+
+.interest-details-value, .interest-details-icon {
+  font-size: 50px;
+}
+
+.interest-details-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  background-color: rgba(255, 250, 250, 0.3);
+  transition: 0.5s ease-in-out;
+}
+
+.interest-details-boxes:hover {
+  border-radius: 60%;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* education */
+.education-details{
+  background-image: url("../../assets/background-5.jpg");
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.education-details-icon{
+  font-size: 50px;
+}
+
+.education-details-boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(180, 180, 184, 0.5);
+}
+
+.education-details-boxes:hover{
+  border-radius: 60%;
+  background-color: #B4B4B8;
+}
+
+/* work experience */
+
+.work-experience-container {
+  color: #000000;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  background-image: url("../../assets/background-5.jpg");
+}
+
+.work-experience-container:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #373A40;
 }

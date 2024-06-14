@@ -20,6 +20,16 @@ export class ResumePageComponent {
     icon: string
   }[] =[]
 
+  educationDetails:{
+    institution: string,
+    degree: string,
+    stream: string[],
+    year: string,
+    gradesystem: string,
+    score: string,
+    icon: string
+  }[] = []
+
   interestsDetails: {
     interest: string,
     icon: string
@@ -62,6 +72,12 @@ export class ResumePageComponent {
       })
     }
 
+    if(this.educationDetails.length <=0 || this.educationDetails === null)
+    {
+      contentData.resumedetails.educationdetails.forEach(record=>{
+        this.educationDetails.push(record);
+      })
+    }
 
   }
 }

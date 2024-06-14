@@ -103,27 +103,6 @@
     }
   ],
   "resumedetails1": {
-    "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
-    "educationdetails": [
-      {
-        "institution": "KIIT University",
-        "degree": "BTech",
-        "stream": ["Information Technology"],
-        "year": "2017 - 2021",
-        "gradesystem": "CGPA",
-        "score": "8.4",
-        "icon": "<i class=\"fas fa-university\"></i>"
-      },
-      {
-        "institution": "DAV Public School",
-        "degree": "Higher Secondary",
-        "stream": ["Physics", "Chemistry", "Maths"],
-        "year": "2015 - 2016",
-        "gradesystem": "Percentage",
-        "score": "77%",
-        "icon": "<i class=\"fas fa-school\"></i>"
-      }
-    ],
     "experiences": [
       {
         "company": "Capgemini",
@@ -360,6 +339,27 @@
     "acheivements": []
   },
   "resumedetails": {
-    "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!"
+    "aboutme": "Hi, I'm a tech enthusiast, always ready to dive into the next big challenge. I have a knack for turning complex problems into simple solutions and love making magic happen with code. When I'm not optimizing enterprise search applications, you can find me strategizing in chess or leveling up in video games. As a lifelong learner and a natural problem-solver, I thrive on new challenges and continuous improvement. Let's connect and explore the world of tech together!",
+    "educationdetails":[
+      {
+        "institution": "KIIT University",
+        "degree": "BTech",
+        "stream": ["Information Technology"],
+        "year": "2017 - 2021",
+        "gradesystem": "CGPA",
+        "score": "8.4",
+        "icon": "<i class=\"fas fa-university\"></i>"
+      },
+      {
+        "institution": "DAV Public School",
+        "degree": "Higher Secondary",
+        "stream": ["Physics", "Chemistry", "Maths"],
+        "year": "2015 - 2016",
+        "gradesystem": "Percentage",
+        "score": "77%",
+        "icon": "<i class=\"fas fa-school\"></i>"
+      }
+    ]
+  
   }
 }
