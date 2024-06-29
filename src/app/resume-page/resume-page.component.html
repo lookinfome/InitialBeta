@@ -2,74 +2,72 @@
 
 <div class="container resume-parent-div">
 
-  <!-- First Row -->
+  <!-- first row -->
 
-  <div class="row mt-5 d-flex justify-content-between">
-
-    <!-- section: basic information: Name, Designation, About Me, Contacts, Interests -->
-
-    <div class="col-lg-5 basic-information-container">
-
-      <section class="p-4 basic-information" *ngIf="showAboutMe; else showAboutMeText">
-
-        <!-- sub-section: name and designation -->
-        <h1 class="">{{name.toUpperCase()}}</h1>
-        <h5 class="mb-5"> {{designation}} </h5>
-
-        <!-- sub-section: contacts and about me -->
-        <div class="basic-information-extension">
-          <div class="contact-details" *ngFor="let contact of contactDetails">
-            <span class="contact-details-type"> {{contact.type.substring(0,1).toUpperCase()}} </span>
-            <span class="contact-details-value mx-2"> {{contact.value}} </span>
-          </div>
-
-          <!-- sub-section: about me: button -->
-          <div class="about-me-container d-flex justify-content-end">
-            <button class="about-me-btn" (click)="toggleShowAboutMe()"> {{showAboutMeButtonValue}} </button>
-          </div>
-        </div>
-
+  <div class="row mt-5">
+    <div class="col-lg-4 introduction-card">
+      <section class="introduction-card-header">
+        <h1> {{name}} </h1>
+        <p> {{ designation }} </p>
       </section>
 
-      <section class="mt-3 p-4 interest-details-container">
-
-        <h1 class="mb-5"> {{"interests".toUpperCase()}} </h1>
-
-        <div class="interest-details d-flex justify-content-between">
-          
-          <div class="interest-details-boxes" *ngFor="let interest of interestsDetails">
-            <span class="interest-details-icon" [innerHTML]="interest.icon"></span>
-          </div>
+      <section class="introduction-card-content mt-5">
+        <div *ngFor="let record of contactDetails">
+          <h5>
+            {{ record.type.substring(0,1).toUpperCase() }} : {{ record.value }}
+          </h5>
         </div>
       </section>
-
-      <!-- about me -->
-      <ng-template #showAboutMeText>
-        <section class="show-about-me-text-container p-5">
-          <h5> {{aboutme}} </h5>
-
-          <!-- flip back: button -->
-          <div class="about-me-container d-flex justify-content-end">
-            <button class="about-me-btn" (click)="toggleShowAboutMe()"> {{showAboutMeButtonValue}} </button>
-          </div>
-        </section>
-      </ng-template>
 
     </div>
 
+    <div class="col-lg-3 mx-1 education-card">
 
-    <!-- section: education details -->
-    
+      <section class="education-card-header">
+        <h2> {{ "education".toUpperCase() }} </h2>
+      </section>
+
+      <section class="mt-2 education-records">
+        <div id="graduation-content-box" class="graduation-record">
+          <section class="record-header">
+            <h3> {{ educationDetails[0].degree }} </h3>
+          </section>
+          <section class="record-content-box-1 d-flex justify-content-between">
+            <p> {{ educationDetails[0].institution }} </p>
+            <p> {{ educationDetails[0].year }} </p>
+          </section>
+          <section class="record-content-box-2">
+            <h5>{{ educationDetails[0].stream }}</h5>
+            {{ educationDetails[0].gradesystem }} - {{ educationDetails[0].score }}
+          </section>
+        </div>
+
+        <div id="higher-secondary-content-box" class="higher-secondary-record">
+          <section class="record-header">
+            <h3> {{ educationDetails[1].degree }} </h3>
+          </section>
+          <section class="record-content-box-1 d-flex justify-content-between">
+            <p> {{ educationDetails[1].institution }} </p>
+            <p class=""> {{ educationDetails[1].year }} </p>
+          </section>
+          <section class="record-content-box-2">
+            <h5>{{ educationDetails[1].stream }}</h5>
+            {{ educationDetails[1].gradesystem }} - {{ educationDetails[1].score }}
+          </section>
+        </div>
+      </section>
+
+      <div class="switch-buttons mt-1 mb-1 d-flex justify-content-center">
+        <button id="btn-next" class="btn btn-dark btn-11" (click)="EducationRecNext()"> <i class="fas fa-angle-up"></i> </button>
+        <button id="btn-prev" class="btn btn-dark mx-2 btn-22" (click)="EducationRecPrev()" disabled> <i class="fas fa-angle-down"></i> </button>
+      </div>
+    </div>
+
+    <div class="col-lg-4"></div>
 
   </div>
 
-  <!-- Second Row -->
-  <div class="row mt-3 d-flex justify-content-between">
-    
-    <!-- section: work experience -->
-    
-
-  </div>
+  <!-- second row -->
 
 
 </div>
